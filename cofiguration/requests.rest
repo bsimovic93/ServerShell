@@ -1,0 +1,38 @@
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/oauth/register
+Content-Type: application/json
+
+{
+
+    "username": "StatusQ4",
+    "password": "Branko123",
+    "confirmPassword": "Branko123",
+    "email": "test@test2.com"
+}
+
+###
+
+POST http://localhost:3000/oauth/login
+Content-Type: application/json
+
+{
+
+    "username": "StatusQ4",
+    "password": "Branko123"
+}
+
+###
+
+GET http://localhost:3000/users/
+
+###
+
+POST http://localhost:3000/oauth/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lIiwiaWF0IjoxNjA0NDI4NDkyfQ.SmesBBT-ObgsMefMv-fRnIDvmEUhQh4RbID_i7tzMlw"
+}
